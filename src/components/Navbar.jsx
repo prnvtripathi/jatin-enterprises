@@ -18,13 +18,13 @@ const navItems = [
 
 export default function Component() {
     return (
-        <div className="flex items-center justify-between px-4 py-5 w-11/12 mx-auto">
+        <div className="flex items-center justify-between px-12 py-5 mx-auto bg-secondary-300">
             <Link href="#" className="flex items-center gap-2" prefetch={false}>
-                <span className={`text-3xl font-bold tracking-wide ${ds.className}`}>Jatin Enterprises</span>
+                <span className={`text-3xl font-bold tracking-wide text-primary-200 underline underline-offset-4 ${ds.className}`}>Jatin Enterprises</span>
             </Link>
             <div className="hidden md:flex justify-around items-center gap-8 lg:gap-12">
                 {navItems.map((item, index) => (
-                    <Link key={index} href={item.href} className="text-xl font-medium hover:bg-secondary-200 px-1.5 py-1 transition-all rounded-md" prefetch={false}>
+                    <Link key={index} href={item.href} className="text-xl font-medium text-primary-300 hover:bg-secondary-100 px-1.5 py-1 transition-all rounded-md" prefetch={false}>
                         {item.name}
                     </Link>
                 ))}
