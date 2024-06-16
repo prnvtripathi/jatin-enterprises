@@ -16,12 +16,12 @@ const ds = Dancing_Script({
 export default function Hero() {
     return (
         <div className="h-screen bg-secondary-300">
-            <div className="flex items-center justify-between px-12 w-full">
+            <div className="flex flex-col-reverse md:flex-row items-center justify-between px-4 md:px-12 w-full">
                 <div className="w-full">
-                    <div className={`${montserrat.className}`}>
-                        <h1 className="text-5xl font-bold text-white">
+                    <div className={`${montserrat.className} text-center md:text-left`}>
+                        <h1 className="text-3xl md:text-5xl font-bold text-white">
                             Furniture that Everyone{" "}
-                            <span className={`text-primary-200 font-bold text-6xl ${ds.className}`}>
+                            <span className={`text-primary-200 font-bold text-4xl md:text-6xl ${ds.className}`}>
                                 Loves 💖
                             </span>
                         </h1>
@@ -29,7 +29,7 @@ export default function Hero() {
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
                         </p>
                     </div>
-                    <div className="mt-4 flex flex-row justify-start items-center gap-3">
+                    <div className="mt-4 flex flex-row justify-center md:justify-start items-center gap-3">
                         <Button asChild>
                             <Link href="#">
                                 Buy Now!
@@ -42,7 +42,7 @@ export default function Hero() {
                         </Button>
                     </div>
                 </div>
-                <Image src="/hero/2.svg" alt="Hero Image" width={500} height={500} className="w-1/2 object-cover" />
+                <Image src="/hero/2.svg" alt="Hero Image" width={500} height={500} className="md:w-1/2 object-cover" />
             </div>
         </div>
     )
