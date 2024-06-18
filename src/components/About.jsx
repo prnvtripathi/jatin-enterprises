@@ -8,7 +8,7 @@ const inter = Inter({
 
 export default function About() {
     return (
-        <section className="py-24">
+        <section className="md:py-24">
             <div className="flex flex-col md:flex-row items-center">
                 <div className="bg-secondary-200 max-w-3xl h-fit py-12 px-4 md:px-14 text-primary-100">
                     <h2 className={`text-3xl md:text-5xl font-black mb-4 ${inter.className}`}>About Us</h2>
