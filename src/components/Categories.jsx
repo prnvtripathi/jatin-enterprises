@@ -1,4 +1,7 @@
+"use client"
+
 import { Dancing_Script } from "next/font/google"
+import { motion, stagger } from "framer-motion"
 
 const ds = Dancing_Script({
     subsets: ['latin-ext'],
@@ -47,15 +50,27 @@ const categories = [
 export default function Categories() {
     return (
         <section className="w-full bg-primary-100 py-2 md:py-12" id="categories">
-            <h2 className={`text-3xl md:text-5xl text-center text-secondary-300 font-bold mb-4 ${ds.className}`}>Some top of the line categories</h2>
-            <div className="flex items-center justify-center flex-wrap gap-x-14 gap-y-8 max-w-4xl mx-auto mt-12">
+            <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.2 }}
+                viewport={{ once: true }}
+                className={`text-3xl md:text-5xl text-center text-secondary-300 font-bold mb-4 ${ds.className}`}>
+                Some top of the line categories
+            </motion.h2>
+            <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.4, staggerChildren: 0.3 }}
+                viewport={{ once: true }}
+                className="flex items-center justify-center flex-wrap gap-x-14 gap-y-8 max-w-4xl mx-auto mt-12">
                 {categories.map((category, index) => (
                     <div key={index} className="flex flex-col items-center gap-2">
                         <img src={category.image} alt={category.name} className="w-16 h-16" />
                         <p className="text-sm text-secondary-300 italic">{category.name}</p>
                     </div>
                 ))}
-            </div>
+            </motion.div>
         </section>
     )
 }

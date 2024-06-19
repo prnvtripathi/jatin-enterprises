@@ -11,11 +11,11 @@ export default function Stats() {
 
                     <dd className="text-4xl font-bold md:text-5xl">
                         <CountUp
-                            end={12}
+                            end={15}
                             duration={3}
                             suffix="+"
                             enableScrollSpy={true}
-                            scrollSpyDelay={500}
+                            scrollSpyDelay={1500}
                             scrollSpyOnce={true}
                         />
                     </dd>

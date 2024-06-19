@@ -19,21 +19,21 @@ const ds = Dancing_Script({
 
 export default function Hero() {
     return (
-        <div className="h-screen bg-secondary-200">
+        <div className="h-screen bg-gradient-to-tr from-secondary-300 to-secondary-100">
             <div className="flex flex-col-reverse md:flex-row items-center justify-between px-4 md:px-12 py-12 w-full">
                 <div className="w-full">
                     <div className={`${montserrat.className} text-center md:text-left`}>
                         <WordPullUp
-                            className='text-4xl font-bold tracking-[-0.02em] text-primary-200 text-left md:text-7xl md:leading-[5rem]'
-                            words="Furniture that everyone loves!"
+                            className='text-4xl font-bold tracking-widest text-primary-200 text-left md:text-7xl md:leading-[5rem]'
+                            words="Furniture that matters to you!"
                         />
                         <motion.p
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 1 }}
-                            className="text-white max-w-xl"
+                            className="text-white max-w-xl mt-2"
                         >
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                            Reach out to us and let's redefine your space with our expert hands .
                         </motion.p>
                     </div>
                     <motion.div
@@ -41,12 +41,12 @@ export default function Hero() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 1.3 }}
                         className="mt-4 flex flex-row justify-center md:justify-start items-center gap-3">
-                        <Button asChild>
+                        <Button asChild className="bg-primary-300 hover:bg-primary-100 text-black w-48">
                             <Link href="#">
                                 Buy Now!
                             </Link>
                         </Button>
-                        <Button asChild>
+                        <Button asChild className="border border-primary-200 bg-transparent hover:bg-primary-300 text-black w-48">
                             <Link href="#">
                                 Explore
                             </Link>
