@@ -1,8 +1,10 @@
+"use client"
+
 import Link from "next/link"
 import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet"
 import { Button } from "@/components/ui/button"
 import { Dancing_Script } from "next/font/google"
-
+import { motion } from "framer-motion"
 
 const ds = Dancing_Script({
     subsets: ["latin"],
@@ -18,7 +20,11 @@ const navItems = [
 
 export default function Component() {
     return (
-        <div className="flex items-center justify-between px-12 py-5 mx-auto bg-secondary-300">
+        <motion.nav
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.2 }}
+            className="flex items-center justify-between px-12 py-5 mx-auto bg-secondary-300">
             <Link href="#" className="flex items-center gap-2" prefetch={false}>
                 <span className={`text-3xl font-bold tracking-wide text-primary-200 underline underline-offset-4 ${ds.className}`}>Jatin Enterprises</span>
             </Link>
@@ -46,7 +52,7 @@ export default function Component() {
                     </div>
                 </SheetContent>
             </Sheet>
-        </div>
+        </motion.nav>
     )
 }
 
