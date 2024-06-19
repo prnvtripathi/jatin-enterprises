@@ -19,8 +19,8 @@ const ds = Dancing_Script({
 
 export default function Hero() {
     return (
-        <div className="h-screen bg-secondary-300">
-            <div className="flex flex-col-reverse md:flex-row items-center justify-between px-4 md:px-12 w-full">
+        <div className="h-screen bg-secondary-200">
+            <div className="flex flex-col-reverse md:flex-row items-center justify-between px-4 md:px-12 py-12 w-full">
                 <div className="w-full">
                     <div className={`${montserrat.className} text-center md:text-left`}>
                         <WordPullUp

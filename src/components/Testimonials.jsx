@@ -9,7 +9,7 @@ const inter = Inter({
 
 export default function Testimonials() {
     return (
-        <section className="w-11/12 mx-auto mt-4">
+        <section className="w-11/12 mx-auto my-4">
             <div className="flex flex-col justify-center gap-y-4">
                 <h2 className={`text-3xl md:text-5xl text-center text-secondary-300 font-black mb-4 ${inter.className}`}>Our Testimonials</h2>
                 <Tooltip />
