@@ -11,7 +11,7 @@ const inter = Inter({
 
 export default function Footer() {
     return (
-        <footer className="bg-secondary-300">
+        <footer className="bg-secondary-300" id="contact">
             <div className="w-11/12 mx-auto py-4">
                 <h2 className={`text-3xl md:text-5xl text-left text-primary-300 font-black mb-4 ${inter.className}`}>Contact Us</h2>
                 <div className="grid md:grid-cols-2 gap-6">

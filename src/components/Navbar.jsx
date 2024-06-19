@@ -11,9 +11,9 @@ const ds = Dancing_Script({
 
 const navItems = [
     { name: "Home", href: "#" },
-    { name: "Categories", href: "#" },
-    { name: "About", href: "#" },
-    { name: "Contact", href: "#" },
+    { name: "Categories", href: "/#categories" },
+    { name: "About", href: "/#about" },
+    { name: "Contact", href: "/#contact" },
 ]
 
 export default function Component() {

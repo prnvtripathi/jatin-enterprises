@@ -46,7 +46,7 @@ const categories = [
 
 export default function Categories() {
     return (
-        <section className="w-full bg-primary-100 py-2 md:py-12">
+        <section className="w-full bg-primary-100 py-2 md:py-12" id="categories">
             <h2 className={`text-3xl md:text-5xl text-center text-secondary-300 font-bold mb-4 ${ds.className}`}>Some top of the line categories</h2>
             <div className="flex items-center justify-center flex-wrap gap-x-14 gap-y-8 max-w-4xl mx-auto mt-12">
                 {categories.map((category, index) => (
